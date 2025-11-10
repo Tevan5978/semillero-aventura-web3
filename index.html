@@ -1,91 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juego Snake 🤓</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Juego Snake </title>
+	<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+	<link href="./estevan.css" rel="stylesheet">
+	<script src="./script.js" type="text/javascript" defer></script>
 </head>
 <body>
-    <header class="header">
-        <h1>Mi juego del Semillero 😊</h1>
-    </header>
-    <section class="hud">
-        <div class="stats">
-            <div class="stat"><span>Puntaje:</span> <span id="scoreBoard">0</span></div>
-            <div class="stat"><span>Mejor:</span> <span id="bestBoard">0</span></div>
-            <div class="stat"><span>Longitud:</span> <span id="lengthBoard">0</span></div>
-            <div class="stat"><span>Nivel:</span> <span id="levelBoard">1</span></div>
-            <div class="stat"><span>Velocidad:</span> <span id="speedBoard">100ms</span></div>
-            <div class="stat"><span>Tiempo:</span> <span id="timeBoard">00:00</span></div>
-        </div>
-        <div class="controls">
-            <div class="control-group">
-                <label for="sizeSelect">Tamaño</label>
-                <select id="sizeSelect">
-                    <option value="10" selected>10x10</option>
-                    <option value="12">12x12</option>
-                    <option value="15">15x15</option>
-                    <option value="20">20x20</option>
-                </select>
-
-                    
-            <div class="control-group">
-                <label for="speedSelect">Velocidad</label>
-                <select id="speedSelect">
-                    <option value="150" selected>Lenta</option>
-                    <option value="100">Normal</option>
-                    <option value="70">Rápida</option>
-                    <option value="50">Extra Rápida</option>
-
-                        
-           
-                </select>
-                            
-                <div class="control-group">
-                <label for="modeSelect">Modo</label>
-                <select id="modeSelect">
-                    <option value="walls" selected>Paredes</option>
-                    <option value="wrap">Teletransportarse</option>
-            </div>
-
-
-                <select></select>
-            <div class="control-group">
-                <label for="skinSelect">Skin</label>
-                <select id="skinSelect">
-                    <option value="classic" selected>cláscio</option>
-                    <option value="nenon">Neón</option>
-                    <option value="retro">Retro</option>
-                    <option value="matrix">Matrix</option>
-                </select>
-            </div>
-        </div>
-    </section>
-                 <div class="control-group">
-                <label for="volumeSlider">Volumen</label>
-                <input type="range" id="volumeSlider" min="0" max="100" value="40">
-            </div>
-                </select>
-        </div>
-        <button id="srtar">Srtar😁 </button>
-        <button id="pause">Pause 👌</button>
-    </section>
-    <div class="board"></div>
-    <section class="help">
-        <p>Instrucción algo va a ir aca</p>
-    </section>
-    <div class="gameOver" class="overlay">
-      <div class="overlay-card">
-        <h2>Game Over 🤨</h2>
-        <p> Mejor Puntaje: <span id="finalBest">0</span> </p>
-        <p>Puntaje: <span id="finalScore">0</span> </p>
-        <div class="overlay-actions">
-            <button id="restart">Reiniciar 😒</button>
-            
-        </div>
-        <p class="hint">Pulsa <kbd>R</kbd> para reiniciar o <kbd>Enter</kbd> para empezar un nuevo juego </p>
-      </div>  
-    </div>
-    
+	<header class="header">
+		<h1>Juego de Snake </h1>
+		<hr>
+	</header>
+	<section class="hud">
+		<div class="stats">
+			<div class="stat"><span>Score:</span> <span id="scoreBoard">0</span></div>
+			<div class="stat"><span>Mejor:</span> <span id="bestBoard">0</span></div>
+			<div class="stat"><span>Longitud:</span> <span id="lengthBoard">0</span></div>
+			<div class="stat"><span>Nivel:</span> <span id="levelBoard">1</span></div>
+			<div class="stat"><span>Velocidad:</span> <span id="speedBoard">100ms</span></div>
+			<div class="stat"><span>Tiempo:</span> <span id="timeBoard">00:00</span></div>
+		</div>
+		<div class="controls">
+			<div class="control-group">
+				<label for="sizeSelect">Tamaño</label>
+				<select id="sizeSelect">
+					<option value="10" selected>10x10</option>
+					<option value="12">12x12</option>
+					<option value="15">15x15</option>
+					<option value="20">20x20</option>
+				</select>
+			</div>
+			<div class="control-group">
+				<label for="speedSelect">Velocidad</label>
+				<select id="speedSelect">
+					<option value="150">Lenta</option>
+					<option value="100" selected>Normal</option>
+					<option value="70">Rápida</option>
+					<option value="50">Insana</option>
+				</select>
+			</div>
+			<div class="control-group">
+				<label for="modeSelect">Modo</label>
+				<select id="modeSelect">
+					<option value="walls" selected>Paredes</option>
+					<option value="wrap">Teletransporte</option>
+				</select>
+			</div>
+			<div class="control-group">
+				<label for="skinSelect">Skin</label>
+				<select id="skinSelect">
+					<option value="classic" selected>Clásico</option>
+					<option value="neon">Neón</option>
+					<option value="retro">Retro</option>
+					<option value="matrix">Matrix</option>
+				</select>
+			</div>
+			<div class="control-group">
+				<label for="volumeSlider">Volumen</label>
+				<input id="volumeSlider" type="range" min="0" max="100" value="40" />
+			</div>
+			<button id="start">Start 😁</button>
+			<button id="pause">Pause ⏸️</button>
+		</div>
+	</section>
+	<div id="board"></div>
+	<section class="help">
+		<p>Controles: Flechas para mover, <kbd>Espacio</kbd> pausar/reanudar, <kbd>R</kbd> reiniciar.</p>
+	</section>
+	<div id="gameOver" class="overlay">
+		<div class="overlay-card">
+			<h2>Game Over, vuelvalo intentar 😫</h2>
+			<p>Puntaje: <span id="finalScore">0</span></p>
+			<p>Mejor puntaje: <span id="finalBest">0</span></p>
+			<div class="overlay-actions">
+				<button id="restart">Reiniciar 🔄</button>
+			</div>
+			<p class="hint">Pulsa <kbd>R</kbd> para reiniciar o <kbd>Enter</kbd> para empezar.</p>
+		</div>
+	</div>
 </body>
 </html>
