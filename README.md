@@ -69,3 +69,7 @@ Además, puedes usar botones en pantalla para iniciar y pausar.
 
 ```bash
 git clone https://github.com/tu_usuario/tu_repositorio.git
+
+## Link del juego:
+https://neon-lebkuchen-340054.netlify.app/
+
