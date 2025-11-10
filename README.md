@@ -63,8 +63,9 @@ Además, puedes usar botones en pantalla para iniciar y pausar.
 
 ---
 
-## Link del juego:
-https://69125fc2eed2aa6e82c0c98b--neon-lebkuchen-340054.netlify.app/
+## Links
+
+Juega aquí: [Markdown Live Preview]([https://markdownlivepreview.com/](https://69125fc2eed2aa6e82c0c98b--neon-lebkuchen-340054.netlify.app/)).
 
 ##  Instalación y Uso
 
